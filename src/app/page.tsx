@@ -1,17 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-
 export default function Home() {
   return (
-    <div>
-      <SignedOut>
-        <SignInButton mode="modal">
-          <Button>Sign In</Button>
-        </SignInButton>
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
+    <div className="flex items-center justify-center">
+      <h1 className="text-6xl font-bold">Welcome to LocateAI!</h1>
     </div>
   );
 }
