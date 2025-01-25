@@ -28,15 +28,13 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
-          <div className="min-h-screen">
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-cyan-600`}  >
             <Navbar />
-            <main className="py-8">
+            <main>
               <div className="max-w-7xl mx-auto px-4">
                 {children}
               </div>
             </main>
-          </div>
         </body>
       </html>
     </ClerkProvider>

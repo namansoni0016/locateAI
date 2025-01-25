@@ -16,15 +16,17 @@ const MobileNavbar = () => {
             <Sheet open={showMobileMenu} onOpenChange={setShowMobileMenu}>
                 <SheetTrigger asChild>
                     <Button variant="ghost" size="icon">
-                        <MenuIcon className="w-5 h-5" />
+                        <MenuIcon className="w-5 h-5" color="white" />
                     </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-[300px]">
+                <SheetContent side="right" className="w-[300px] bg-cyan-600">
                     <SheetHeader>
-                        <SheetTitle>Menu</SheetTitle>
+                        <SheetTitle>
+                            <p className="text-white text-lg">Menu</p>
+                        </SheetTitle>
                     </SheetHeader>
                     <nav className="flex flex-col space-y-4 mt-6">
-                        <Button variant="ghost" className="flex items-center gap-3 justify-start" asChild>
+                        <Button variant="ghost" className="flex items-center gap-3 justify-start text-white" asChild>
                             <Link href="/about">
                                 <CopyrightIcon className="w-4 h-4" />
                                 About
@@ -32,14 +34,14 @@ const MobileNavbar = () => {
                         </Button>
                         {isSignedIn ? (
                             <>
-                                <Button variant="ghost" className="flex items-center gap-3 justify-start" asChild>
+                                <Button variant="ghost" className="flex items-center gap-3 justify-start text-white" asChild>
                                     <Link href={`/profile/${user?.primaryEmailAddress?.emailAddress.split("@")[0]}`}>
                                         <UserIcon className="w-4 h-4" />
                                         Profile
                                     </Link>
                                 </Button>
                                 <SignOutButton>
-                                    <Button variant="ghost" className="flex items-center gap-3 justify-start w-full">
+                                    <Button variant="ghost" className="flex items-center gap-3 justify-start w-full text-white">
                                         <LogOutIcon className="w-4 h-4" />
                                         Logout
                                     </Button>
