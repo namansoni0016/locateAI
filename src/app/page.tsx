@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center w-full mx-auto h-full">
+    <div className="flex items-center justify-center w-full mx-auto h-screen">
       <div className="flex flex-col items-center justify-center w-full h-full">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex items-center justify-center">
