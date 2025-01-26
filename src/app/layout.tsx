@@ -28,12 +28,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-cyan-600`}  >
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-teal-600 to-cyan-600`}  >
             <Navbar />
             <main>
-              <div className="max-w-7xl mx-auto px-4">
-                {children}
-              </div>
+              {children}
             </main>
         </body>
       </html>

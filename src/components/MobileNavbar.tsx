@@ -49,7 +49,7 @@ const MobileNavbar = () => {
                             </>
                         ) : (
                             <SignInButton mode="modal">
-                                <Button variant="default" className="w-full">
+                                <Button variant="default" className="py-2 font-semibold rounded-lg bg-white text-cyan-800 shadow-md hover:bg-gray-100 hover:shadow-lg transform hover:-translate-y-1 transition duration-300 ease-in-out">
                                     Sign In
                                 </Button>
                             </SignInButton>
